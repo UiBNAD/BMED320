@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.40 (Build 278) (http://www.copasi.org) at 2023-11-06T10:09:18Z -->
+<!-- generated with COPASI 4.40 (Build 278) (http://www.copasi.org) at 2023-11-06T10:25:58Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="40" versionDevel="278" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -17,20 +17,43 @@
         <ParameterDescription key="FunctionParameter_49" name="v" order="0" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
-    <Function key="Function_7" name="Constant flux (reversible)" type="PreDefined" reversible="true">
+    <Function key="Function_8" name="Henri-Michaelis-Menten (irreversible)" type="PreDefined" reversible="false">
       <MiriamAnnotation>
 <rdf:RDF
 xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Function_7">
+<rdf:Description rdf:about="#Function_8">
 </rdf:Description>
 </rdf:RDF>
       </MiriamAnnotation>
       <Expression>
-        v
+        V*substrate/(Km+substrate)
       </Expression>
       <ListOfParameterDescriptions>
-        <ParameterDescription key="FunctionParameter_48" name="v" order="0" role="constant"/>
+        <ParameterDescription key="FunctionParameter_47" name="substrate" order="0" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_46" name="Km" order="1" role="constant"/>
+        <ParameterDescription key="FunctionParameter_45" name="V" order="2" role="constant"/>
+      </ListOfParameterDescriptions>
+    </Function>
+    <Function key="Function_28" name="Reversible Michaelis-Menten" type="PreDefined" reversible="true">
+      <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#Function_28">
+</rdf:Description>
+</rdf:RDF>
+      </MiriamAnnotation>
+      <Expression>
+        (Vf*substrate/Kms-Vr*product/Kmp)/(1+substrate/Kms+product/Kmp)
+      </Expression>
+      <ListOfParameterDescriptions>
+        <ParameterDescription key="FunctionParameter_195" name="substrate" order="0" role="substrate"/>
+        <ParameterDescription key="FunctionParameter_196" name="product" order="1" role="product"/>
+        <ParameterDescription key="FunctionParameter_197" name="Kms" order="2" role="constant"/>
+        <ParameterDescription key="FunctionParameter_198" name="Kmp" order="3" role="constant"/>
+        <ParameterDescription key="FunctionParameter_199" name="Vf" order="4" role="constant"/>
+        <ParameterDescription key="FunctionParameter_200" name="Vr" order="5" role="constant"/>
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
@@ -61,96 +84,174 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     </ListOfCompartments>
     <ListOfMetabolites>
       <Metabolite key="Metabolite_0" name="A" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_0">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </Metabolite>
       <Metabolite key="Metabolite_1" name="B" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_1">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </Metabolite>
       <Metabolite key="Metabolite_2" name="C" simulationType="reactions" compartment="Compartment_0" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Metabolite_2">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </Metabolite>
     </ListOfMetabolites>
     <ListOfModelValues>
-      <ModelValue key="ModelValue_27" name="v_influx" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_0" name="v_influx" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_27">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_0">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_26" name="v4" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_1" name="v4" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_26">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_1">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_24" name="v6" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_2" name="v6" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_24">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_2">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_23" name="E1" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_3" name="E1" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_23">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_3">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_22" name="E2" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_4" name="E2" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_22">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_4">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_21" name="E3" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_5" name="E3" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_21">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_5">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_20" name="E5" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_6" name="E5" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_6">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_7" name="E7" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_7">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_8" name="kcat1S" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_8">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_9" name="kcat1P" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_9">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_10" name="kcat2" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_10">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_11" name="kcat3" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_11">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_12" name="kcat5" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_12">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_13" name="kcat7" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_13">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_14" name="Km1S" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_14">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_15" name="Km1P" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_15">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_16" name="Km2" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_16">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_17" name="Km3" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_17">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_18" name="Km5" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_18">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_19" name="Km7" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_19">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_20" name="Vmax1S" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF
 xmlns:dcterms="http://purl.org/dc/terms/"
@@ -159,240 +260,240 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 </rdf:Description>
 </rdf:RDF>
         </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_19" name="E7" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_19">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_18" name="kcat1S" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_18">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_17" name="kcat1P" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_17">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_16" name="kcat2" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_16">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_15" name="kcat3" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_15">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_14" name="kcat5" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_14">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_31" name="kcat7" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_31">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_13" name="Km1S" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_13">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_30" name="Km1P" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_30">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_12" name="Km2" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_12">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_29" name="Km3" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_29">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_11" name="Km5" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_11">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_28" name="Km7" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_28">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
-      </ModelValue>
-      <ModelValue key="ModelValue_10" name="Vmax1S" simulationType="fixed" addNoise="false">
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E1],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat1S],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
-      <ModelValue key="ModelValue_25" name="Vmax1P" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_21" name="Vmax1P" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_21">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E1],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat1P],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
-      <ModelValue key="ModelValue_9" name="Vmax2" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_22" name="Vmax2" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_22">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E2],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat2],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
-      <ModelValue key="ModelValue_8" name="Vmax3" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_23" name="Vmax3" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_23">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E3],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat3],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
-      <ModelValue key="ModelValue_7" name="Vmax5" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_24" name="Vmax5" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="#ModelValue_24">
+</rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E5],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat5],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
-      <ModelValue key="ModelValue_6" name="Vmax7" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_25" name="Vmax7" simulationType="fixed" addNoise="false">
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E7],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat7],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
-      <Reaction key="Reaction_3" name="-> A" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_0" name="v_influx" reversible="false" fast="false" addNoise="false">
+        <ListOfProducts>
+          <Product metabolite="Metabolite_0" stoichiometry="1"/>
+        </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_358" name="v" value="1"/>
+          <Constant key="Parameter_204" name="v" value="0.1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_6" unitType="Default">
+        <KineticLaw function="Function_6" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_49">
-              <SourceParameter reference="ModelValue_27"/>
+              <SourceParameter reference="ModelValue_0"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_5" name="A ->" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_1" name="v5" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
+        </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_341" name="v" value="0.1"/>
+          <Constant key="Parameter_376" name="Km" value="0.1"/>
+          <Constant key="Parameter_201" name="V" value="0.1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_6" unitType="Default">
+        <KineticLaw function="Function_8" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
           <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_49">
-              <SourceParameter reference="Parameter_341"/>
+            <CallParameter functionParameter="FunctionParameter_47">
+              <SourceParameter reference="Metabolite_0"/>
             </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_2" name="A -> B" reversible="false" fast="false" addNoise="false">
-        <ListOfConstants>
-          <Constant key="Parameter_356" name="v" value="-0.1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_7" unitType="Default">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_48">
-              <SourceParameter reference="Parameter_356"/>
+            <CallParameter functionParameter="FunctionParameter_46">
+              <SourceParameter reference="ModelValue_18"/>
             </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_1" name="B ->" reversible="false" fast="false" addNoise="false">
-        <ListOfConstants>
-          <Constant key="Parameter_342" name="v" value="0.1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_6" unitType="Default">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_49">
-              <SourceParameter reference="Parameter_342"/>
-            </CallParameter>
-          </ListOfCallParameters>
-        </KineticLaw>
-      </Reaction>
-      <Reaction key="Reaction_6" name="B -> C" reversible="false" fast="false" addNoise="false">
-      </Reaction>
-      <Reaction key="Reaction_4" name="-> C" reversible="false" fast="false" addNoise="false">
-        <ListOfConstants>
-          <Constant key="Parameter_350" name="v" value="1"/>
-        </ListOfConstants>
-        <KineticLaw function="Function_6" unitType="Default">
-          <ListOfCallParameters>
-            <CallParameter functionParameter="FunctionParameter_49">
+            <CallParameter functionParameter="FunctionParameter_45">
               <SourceParameter reference="ModelValue_24"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_7" name="C ->" reversible="false" fast="false" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#Reaction_7">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
+      <Reaction key="Reaction_2" name="v1" reversible="true" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_0" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_1" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_382" name="Kms" value="0.1"/>
+          <Constant key="Parameter_380" name="Kmp" value="0.1"/>
+          <Constant key="Parameter_383" name="Vf" value="0.1"/>
+          <Constant key="Parameter_384" name="Vr" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_28" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_195">
+              <SourceParameter reference="Metabolite_0"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_196">
+              <SourceParameter reference="Metabolite_1"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_197">
+              <SourceParameter reference="ModelValue_14"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_198">
+              <SourceParameter reference="ModelValue_15"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_199">
+              <SourceParameter reference="ModelValue_20"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_200">
+              <SourceParameter reference="ModelValue_21"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_3" name="v3" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_1" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfConstants>
+          <Constant key="Parameter_379" name="Km" value="0.1"/>
+          <Constant key="Parameter_371" name="V" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_8" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_47">
+              <SourceParameter reference="Metabolite_1"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_46">
+              <SourceParameter reference="ModelValue_17"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_45">
+              <SourceParameter reference="ModelValue_23"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_4" name="v2" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_1" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfProducts>
+          <Product metabolite="Metabolite_2" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_378" name="Km" value="0.1"/>
+          <Constant key="Parameter_377" name="V" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_8" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_47">
+              <SourceParameter reference="Metabolite_1"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_46">
+              <SourceParameter reference="ModelValue_16"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_45">
+              <SourceParameter reference="ModelValue_22"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_5" name="v6" reversible="false" fast="false" addNoise="false">
+        <ListOfProducts>
+          <Product metabolite="Metabolite_2" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_200" name="v" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_6" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_49">
+              <SourceParameter reference="ModelValue_2"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_6" name="v7" reversible="false" fast="false" addNoise="false">
+        <ListOfSubstrates>
+          <Substrate metabolite="Metabolite_2" stoichiometry="1"/>
+        </ListOfSubstrates>
+        <ListOfConstants>
+          <Constant key="Parameter_375" name="Km" value="0.1"/>
+          <Constant key="Parameter_203" name="V" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_8" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_47">
+              <SourceParameter reference="Metabolite_2"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_46">
+              <SourceParameter reference="ModelValue_19"/>
+            </CallParameter>
+            <CallParameter functionParameter="FunctionParameter_45">
+              <SourceParameter reference="ModelValue_25"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
+      </Reaction>
+      <Reaction key="Reaction_7" name="v4" reversible="false" fast="false" addNoise="false">
+        <ListOfProducts>
+          <Product metabolite="Metabolite_0" stoichiometry="1"/>
+        </ListOfProducts>
+        <ListOfConstants>
+          <Constant key="Parameter_346" name="v" value="0.1"/>
+        </ListOfConstants>
+        <KineticLaw function="Function_6" unitType="Default" scalingCompartment="CN=Root,Model=ABC model,Vector=Compartments[compartment]">
+          <ListOfCallParameters>
+            <CallParameter functionParameter="FunctionParameter_49">
+              <SourceParameter reference="ModelValue_1"/>
+            </CallParameter>
+          </ListOfCallParameters>
+        </KineticLaw>
       </Reaction>
     </ListOfReactions>
     <ListOfModelParameterSets activeSet="ModelParameterSet_0">
@@ -412,9 +513,9 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment]" value="1" type="Compartment" simulationType="fixed"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Species Values" type="Group">
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A]" value="6.0221407599999187e+23" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B]" value="6.0221407599999187e+23" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C]" value="6.0221407599999187e+23" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C]" value="0" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[v_influx]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
@@ -469,32 +570,96 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           </ModelParameter>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[-\> A]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[-\> A],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v_influx]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v_influx],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[v_influx],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[A -\>]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[A -\>],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v5]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v5],ParameterGroup=Parameters,Parameter=Km" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Km5],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v5],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Vmax5],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[A -\> B]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[A -\> B],ParameterGroup=Parameters,Parameter=v" value="-0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v1]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Kms" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Km1S],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Kmp" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Km1P],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Vf" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Vmax1S],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Vr" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Vmax1P],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[B -\>]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[B -\>],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v3]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v3],ParameterGroup=Parameters,Parameter=Km" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Km3],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v3],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Vmax3],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[B -\> C]" type="Reaction">
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v2]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v2],ParameterGroup=Parameters,Parameter=Km" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Km2],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v2],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Vmax2],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[-\> C]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[-\> C],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v6]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v6],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[v6],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[C -\>]" type="Reaction">
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v7]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v7],ParameterGroup=Parameters,Parameter=Km" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Km7],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v7],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[Vmax7],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=ABC model,Vector=Reactions[v4]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v4],ParameterGroup=Parameters,Parameter=v" value="0.10000000000000001" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=ABC model,Vector=Values[v4],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
@@ -502,38 +667,38 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <StateTemplate>
       <StateTemplateVariable objectReference="Model_0"/>
       <StateTemplateVariable objectReference="Metabolite_0"/>
-      <StateTemplateVariable objectReference="Metabolite_1"/>
       <StateTemplateVariable objectReference="Metabolite_2"/>
+      <StateTemplateVariable objectReference="Metabolite_1"/>
       <StateTemplateVariable objectReference="Compartment_0"/>
-      <StateTemplateVariable objectReference="ModelValue_27"/>
-      <StateTemplateVariable objectReference="ModelValue_26"/>
-      <StateTemplateVariable objectReference="ModelValue_24"/>
-      <StateTemplateVariable objectReference="ModelValue_23"/>
-      <StateTemplateVariable objectReference="ModelValue_22"/>
-      <StateTemplateVariable objectReference="ModelValue_21"/>
-      <StateTemplateVariable objectReference="ModelValue_20"/>
-      <StateTemplateVariable objectReference="ModelValue_19"/>
-      <StateTemplateVariable objectReference="ModelValue_18"/>
-      <StateTemplateVariable objectReference="ModelValue_17"/>
-      <StateTemplateVariable objectReference="ModelValue_16"/>
-      <StateTemplateVariable objectReference="ModelValue_15"/>
-      <StateTemplateVariable objectReference="ModelValue_14"/>
-      <StateTemplateVariable objectReference="ModelValue_31"/>
-      <StateTemplateVariable objectReference="ModelValue_13"/>
-      <StateTemplateVariable objectReference="ModelValue_30"/>
-      <StateTemplateVariable objectReference="ModelValue_12"/>
-      <StateTemplateVariable objectReference="ModelValue_29"/>
-      <StateTemplateVariable objectReference="ModelValue_11"/>
-      <StateTemplateVariable objectReference="ModelValue_28"/>
-      <StateTemplateVariable objectReference="ModelValue_10"/>
-      <StateTemplateVariable objectReference="ModelValue_25"/>
-      <StateTemplateVariable objectReference="ModelValue_9"/>
-      <StateTemplateVariable objectReference="ModelValue_8"/>
-      <StateTemplateVariable objectReference="ModelValue_7"/>
+      <StateTemplateVariable objectReference="ModelValue_0"/>
+      <StateTemplateVariable objectReference="ModelValue_1"/>
+      <StateTemplateVariable objectReference="ModelValue_2"/>
+      <StateTemplateVariable objectReference="ModelValue_3"/>
+      <StateTemplateVariable objectReference="ModelValue_4"/>
+      <StateTemplateVariable objectReference="ModelValue_5"/>
       <StateTemplateVariable objectReference="ModelValue_6"/>
+      <StateTemplateVariable objectReference="ModelValue_7"/>
+      <StateTemplateVariable objectReference="ModelValue_8"/>
+      <StateTemplateVariable objectReference="ModelValue_9"/>
+      <StateTemplateVariable objectReference="ModelValue_10"/>
+      <StateTemplateVariable objectReference="ModelValue_11"/>
+      <StateTemplateVariable objectReference="ModelValue_12"/>
+      <StateTemplateVariable objectReference="ModelValue_13"/>
+      <StateTemplateVariable objectReference="ModelValue_14"/>
+      <StateTemplateVariable objectReference="ModelValue_15"/>
+      <StateTemplateVariable objectReference="ModelValue_16"/>
+      <StateTemplateVariable objectReference="ModelValue_17"/>
+      <StateTemplateVariable objectReference="ModelValue_18"/>
+      <StateTemplateVariable objectReference="ModelValue_19"/>
+      <StateTemplateVariable objectReference="ModelValue_20"/>
+      <StateTemplateVariable objectReference="ModelValue_21"/>
+      <StateTemplateVariable objectReference="ModelValue_22"/>
+      <StateTemplateVariable objectReference="ModelValue_23"/>
+      <StateTemplateVariable objectReference="ModelValue_24"/>
+      <StateTemplateVariable objectReference="ModelValue_25"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 6.0221407599999187e+23 6.0221407599999187e+23 6.0221407599999187e+23 1 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 
+      0 0 0 0 1 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -994,6 +1159,49 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       </ListOfPlotItems>
     </PlotSpecification>
     <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values" type="Plot2D" active="1" taskTypes="">
+      <Parameter name="log X" type="bool" value="0"/>
+      <Parameter name="log Y" type="bool" value="0"/>
+      <Parameter name="plot engine" type="string" value="QCustomPlot"/>
+      <ListOfPlotItems>
+        <PlotItem name="[A]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+        <PlotItem name="[B]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+        <PlotItem name="[C]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+      </ListOfPlotItems>
+    </PlotSpecification>
+    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values 1" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <Parameter name="plot engine" type="string" value="QCustomPlot"/>
