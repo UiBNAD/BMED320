@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.40 (Build 278) (http://www.copasi.org) at 2023-11-06T10:25:58Z -->
+<!-- generated with COPASI 4.40 (Build 278) (http://www.copasi.org) at 2023-11-07T09:17:22Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="40" versionDevel="278" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -92,226 +92,66 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     </ListOfMetabolites>
     <ListOfModelValues>
       <ModelValue key="ModelValue_0" name="v_influx" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_0">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_1" name="v4" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_1">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_2" name="v6" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_2">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_3" name="E1" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_3">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_4" name="E2" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_4">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_5" name="E3" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_5">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_6" name="E5" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_6">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_7" name="E7" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_7">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_8" name="kcat1S" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_8">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_9" name="kcat1P" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_9">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_10" name="kcat2" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_10">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_11" name="kcat3" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_11">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_12" name="kcat5" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_12">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_13" name="kcat7" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_13">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_14" name="Km1S" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_14">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_15" name="Km1P" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_15">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_16" name="Km2" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_16">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_17" name="Km3" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_17">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_18" name="Km5" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_18">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_19" name="Km7" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_19">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_20" name="Vmax1S" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_20">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E1],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat1S],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
       <ModelValue key="ModelValue_21" name="Vmax1P" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_21">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E1],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat1P],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
       <ModelValue key="ModelValue_22" name="Vmax2" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_22">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E2],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat2],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
       <ModelValue key="ModelValue_23" name="Vmax3" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_23">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E3],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat3],Reference=InitialValue>
         </InitialExpression>
       </ModelValue>
       <ModelValue key="ModelValue_24" name="Vmax5" simulationType="fixed" addNoise="false">
-        <MiriamAnnotation>
-<rdf:RDF
-xmlns:dcterms="http://purl.org/dc/terms/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<rdf:Description rdf:about="#ModelValue_24">
-</rdf:Description>
-</rdf:RDF>
-        </MiriamAnnotation>
         <InitialExpression>
           &lt;CN=Root,Model=ABC model,Vector=Values[E5],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat5],Reference=InitialValue>
         </InitialExpression>
@@ -521,11 +361,11 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[v_influx]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[v4]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[v6]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E1]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E2]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E3]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E5]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E7]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E1]" value="100" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E2]" value="100" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E3]" value="100" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E5]" value="100" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[E7]" value="100" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[kcat1S]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[kcat1P]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[kcat2]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
@@ -538,32 +378,32 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Km3]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Km5]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
           <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Km7]" value="0.10000000000000001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax1S]" value="0.010000000000000002" type="ModelValue" simulationType="fixed">
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax1S]" value="10" type="ModelValue" simulationType="fixed">
             <InitialExpression>
               &lt;CN=Root,Model=ABC model,Vector=Values[E1],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat1S],Reference=InitialValue>
             </InitialExpression>
           </ModelParameter>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax1P]" value="0.010000000000000002" type="ModelValue" simulationType="fixed">
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax1P]" value="10" type="ModelValue" simulationType="fixed">
             <InitialExpression>
               &lt;CN=Root,Model=ABC model,Vector=Values[E1],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat1P],Reference=InitialValue>
             </InitialExpression>
           </ModelParameter>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax2]" value="0.010000000000000002" type="ModelValue" simulationType="fixed">
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax2]" value="10" type="ModelValue" simulationType="fixed">
             <InitialExpression>
               &lt;CN=Root,Model=ABC model,Vector=Values[E2],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat2],Reference=InitialValue>
             </InitialExpression>
           </ModelParameter>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax3]" value="0.010000000000000002" type="ModelValue" simulationType="fixed">
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax3]" value="10" type="ModelValue" simulationType="fixed">
             <InitialExpression>
               &lt;CN=Root,Model=ABC model,Vector=Values[E3],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat3],Reference=InitialValue>
             </InitialExpression>
           </ModelParameter>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax5]" value="0.010000000000000002" type="ModelValue" simulationType="fixed">
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax5]" value="10" type="ModelValue" simulationType="fixed">
             <InitialExpression>
               &lt;CN=Root,Model=ABC model,Vector=Values[E5],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat5],Reference=InitialValue>
             </InitialExpression>
           </ModelParameter>
-          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax7]" value="0.010000000000000002" type="ModelValue" simulationType="fixed">
+          <ModelParameter cn="CN=Root,Model=ABC model,Vector=Values[Vmax7]" value="10" type="ModelValue" simulationType="fixed">
             <InitialExpression>
               &lt;CN=Root,Model=ABC model,Vector=Values[E7],Reference=InitialValue>*&lt;CN=Root,Model=ABC model,Vector=Values[kcat7],Reference=InitialValue>
             </InitialExpression>
@@ -583,7 +423,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 &lt;CN=Root,Model=ABC model,Vector=Values[Km5],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v5],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v5],ParameterGroup=Parameters,Parameter=V" value="10" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[Vmax5],Reference=InitialValue>
               </InitialExpression>
@@ -600,12 +440,12 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 &lt;CN=Root,Model=ABC model,Vector=Values[Km1P],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Vf" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Vf" value="10" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[Vmax1S],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Vr" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v1],ParameterGroup=Parameters,Parameter=Vr" value="10" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[Vmax1P],Reference=InitialValue>
               </InitialExpression>
@@ -617,7 +457,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 &lt;CN=Root,Model=ABC model,Vector=Values[Km3],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v3],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v3],ParameterGroup=Parameters,Parameter=V" value="10" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[Vmax3],Reference=InitialValue>
               </InitialExpression>
@@ -629,7 +469,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 &lt;CN=Root,Model=ABC model,Vector=Values[Km2],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v2],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v2],ParameterGroup=Parameters,Parameter=V" value="10" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[Vmax2],Reference=InitialValue>
               </InitialExpression>
@@ -648,7 +488,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 &lt;CN=Root,Model=ABC model,Vector=Values[Km7],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v7],ParameterGroup=Parameters,Parameter=V" value="0.010000000000000002" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=ABC model,Vector=Reactions[v7],ParameterGroup=Parameters,Parameter=V" value="10" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
                 &lt;CN=Root,Model=ABC model,Vector=Values[Vmax7],Reference=InitialValue>
               </InitialExpression>
@@ -698,7 +538,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <StateTemplateVariable objectReference="ModelValue_25"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 0 0 0 1 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 0.010000000000000002 
+      0 0 0 0 1 0.10000000000000001 0.10000000000000001 0.10000000000000001 100 100 100 100 100 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 0.10000000000000001 10 10 10 10 10 10 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -747,16 +587,6 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <Problem>
         <Parameter name="Subtask" type="unsignedInteger" value="0"/>
         <ParameterGroup name="ScanItems">
-          <ParameterGroup name="ScanItem">
-            <Parameter name="Number of steps" type="unsignedInteger" value="10"/>
-            <Parameter name="Type" type="unsignedInteger" value="1"/>
-            <Parameter name="Object" type="cn" value="CN=Root,Model=ABC model,Vector=Values[v_in],Reference=InitialValue"/>
-            <Parameter name="Minimum" type="float" value="1"/>
-            <Parameter name="Maximum" type="float" value="100"/>
-            <Parameter name="log" type="bool" value="0"/>
-            <Parameter name="Values" type="string" value=""/>
-            <Parameter name="Use Values" type="bool" value="0"/>
-          </ParameterGroup>
         </ParameterGroup>
         <Parameter name="Output in subtask" type="bool" value="0"/>
         <Parameter name="Adjust initial conditions" type="bool" value="0"/>
@@ -1115,7 +945,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     </Report>
   </ListOfReports>
   <ListOfPlots>
-    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values" type="Plot2D" active="1" taskTypes="Scan">
+    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values" type="Plot2D" active="0" taskTypes="Scan">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <Parameter name="plot engine" type="string" value="QCustomPlot"/>
@@ -1128,7 +958,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[v_in],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[E2],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
@@ -1140,7 +970,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[v_in],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[E2],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
@@ -1152,13 +982,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[v_in],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[E2],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values" type="Plot2D" active="1" taskTypes="">
+    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values 1" type="Plot2D" active="0" taskTypes="Scan">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <Parameter name="plot engine" type="string" value="QCustomPlot"/>
@@ -1171,7 +1001,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[E3],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
@@ -1183,7 +1013,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[E3],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
@@ -1195,13 +1025,13 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[E3],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Concentrations, Volumes, and Global Quantity Values 1" type="Plot2D" active="1" taskTypes="">
+    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values 2" type="Plot2D" active="0" taskTypes="Scan">
       <Parameter name="log X" type="bool" value="0"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <Parameter name="plot engine" type="string" value="QCustomPlot"/>
@@ -1214,7 +1044,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[kcat1P],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
@@ -1226,7 +1056,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[kcat1P],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
@@ -1238,7 +1068,50 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=ABC model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[kcat1P],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+      </ListOfPlotItems>
+    </PlotSpecification>
+    <PlotSpecification name="Scan of Concentrations, Volumes, and Global Quantity Values 3" type="Plot2D" active="1" taskTypes="Scan">
+      <Parameter name="log X" type="bool" value="0"/>
+      <Parameter name="log Y" type="bool" value="0"/>
+      <Parameter name="plot engine" type="string" value="QCustomPlot"/>
+      <ListOfPlotItems>
+        <PlotItem name="[A]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[Km2],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[A],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+        <PlotItem name="[B]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[Km2],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[B],Reference=Concentration"/>
+          </ListOfChannels>
+        </PlotItem>
+        <PlotItem name="[C]" type="Curve2D">
+          <Parameter name="Line type" type="unsignedInteger" value="0"/>
+          <Parameter name="Line subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Line width" type="unsignedFloat" value="1.2"/>
+          <Parameter name="Symbol subtype" type="unsignedInteger" value="0"/>
+          <Parameter name="Color" type="string" value="auto"/>
+          <Parameter name="Recording Activity" type="string" value="during"/>
+          <ListOfChannels>
+            <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Values[Km2],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Model=ABC model,Vector=Compartments[compartment],Vector=Metabolites[C],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
