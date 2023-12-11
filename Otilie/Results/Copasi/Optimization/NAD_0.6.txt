@@ -1,0 +1,17 @@
+Objective Value
+0
+Function Evaluations	CPU Time [s]	Evaluations/second [1/s]
+4008	21.8491	183.44
+
+Parameters:
+Parameter	Lower Bound	Start Value	Value	Upper Bound	Coeff. of Variation [%]	Gradient
+Values[GAPDH].InitialValue	1e-06	10	1916.528805173529	1000000	nan	1.5176597127713072e-64
+Values[SLC25A17].InitialValue	1e-06	10	0.005105383532757814	100	nan	0
+Values[NMNAT-2].InitialValue	1e-06	10	0.0029870835677121	1000000	nan	0
+Values[NUDT12].InitialValue	1e-06	10	0.0005710987135705455	1000000	nan	0
+Values[SLC25A51].InitialValue	1e-06	10	1615.1666023828682	1000000	nan	5.762652202810943e-63
+Values[pPARP].InitialValue	1e-06	10	0.11135162155039721	1000000	nan	8.88255238935456e-61
+
+Method Log:
+
+
