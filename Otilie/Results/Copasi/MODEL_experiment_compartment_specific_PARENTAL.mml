@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE math PUBLIC "-//W3C//DTD MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/mathml2.dtd">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mtable>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NAD{Mitochondria}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Mitochondria</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Mitochondria</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mi>k1</mi>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<mi>Vmax4f</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Cytosol}]</mi>
+</mrow>
+<mi>Kms4</mi>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>Vmax4b</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Mitochondria}]</mi>
+</mrow>
+<mi>Kmp4</mi>
+</mfrac>
+</mrow>
+<mrow>
+<mrow>
+<mn>1</mn>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Cytosol}]</mi>
+<mi>Kms4</mi>
+</mfrac>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Mitochondria}]</mi>
+<mi>Kmp4</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Mitochondria</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax6</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Mitochondria}]</mi>
+</mrow>
+<mrow>
+<mi>Km6</mi>
+<mo>+</mo>
+<mi>[NAD{Mitochondria}]</mi>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NAD{Peroxisome}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mi>k2</mi>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax1</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>Km1</mi>
+<mo>+</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mrow>
+<mi>Km1</mi>
+<mo>&CenterDot;</mo>
+<mi>[NADPH]</mi>
+</mrow>
+<mi>kiNADPH</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<mi>Vmax9f</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mi>Kms9</mi>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>Vmax9b</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Cytosol}]</mi>
+</mrow>
+<mi>Kmp9</mi>
+</mfrac>
+</mrow>
+<mrow>
+<mrow>
+<mn>1</mn>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Peroxisome}]</mi>
+<mi>Kms9</mi>
+</mfrac>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Cytosol}]</mi>
+<mi>Kmp9</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax2</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mrow>
+<mi>Km2</mi>
+<mo>+</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[PAR{Mitochondria}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Mitochondria</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Mitochondria</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax6</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Mitochondria}]</mi>
+</mrow>
+<mrow>
+<mi>Km6</mi>
+<mo>+</mo>
+<mi>[NAD{Mitochondria}]</mi>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[PAR{Peroxisome}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax2</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mrow>
+<mi>Km2</mi>
+<mo>+</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NMN{Peroxisome}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax1</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>Km1</mi>
+<mo>+</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mrow>
+<mi>Km1</mi>
+<mo>&CenterDot;</mo>
+<mi>[NADPH]</mi>
+</mrow>
+<mi>kiNADPH</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NAD{Cytosol}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Cytosol</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<mi>Vmax9f</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mi>Kms9</mi>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>Vmax9b</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Cytosol}]</mi>
+</mrow>
+<mi>Kmp9</mi>
+</mfrac>
+</mrow>
+<mrow>
+<mrow>
+<mn>1</mn>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Peroxisome}]</mi>
+<mi>Kms9</mi>
+</mfrac>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Cytosol}]</mi>
+<mi>Kmp9</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Cytosol</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax7</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Cytosol}]</mi>
+</mrow>
+<mrow>
+<mi>Km7</mi>
+<mo>+</mo>
+<mi>[NAD{Cytosol}]</mi>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<mi>Vmax4f</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Cytosol}]</mi>
+</mrow>
+<mi>Kms4</mi>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mi>Vmax4b</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Mitochondria}]</mi>
+</mrow>
+<mi>Kmp4</mi>
+</mfrac>
+</mrow>
+<mrow>
+<mrow>
+<mn>1</mn>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Cytosol}]</mi>
+<mi>Kms4</mi>
+</mfrac>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mi>[NAD{Mitochondria}]</mi>
+<mi>Kmp4</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+  </mtd>
+  <mtd>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Cytosol</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mrow>
+<mi>Vmax11</mi>
+<mo>&CenterDot;</mo>
+<mi>[NMN{Cytosol}]</mi>
+</mrow>
+<mo>&CenterDot;</mo>
+<mi>[ATP]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mrow>
+<mrow>
+<mi>KmNMN</mi>
+<mo>&CenterDot;</mo>
+<mi>KmATP</mi>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[NMN{Cytosol}]</mi>
+<mo>&CenterDot;</mo>
+<mi>KmATP</mi>
+</mrow>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[ATP]</mi>
+<mo>&CenterDot;</mo>
+<mi>KmNMN</mi>
+</mrow>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[NMN{Cytosol}]</mi>
+<mo>&CenterDot;</mo>
+<mi>[ATP]</mi>
+</mrow>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NADPH]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax5</mi>
+<mo>&CenterDot;</mo>
+<mi>[NADPH]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>Km5</mi>
+<mo>+</mo>
+<mi>[NADPH]</mi>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mrow>
+<mi>Km5</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mi>kiNADpex</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NMNH]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>+</mo>
+    <msub><mi>V</mi><mi>Peroxisome</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mi>Vmax5</mi>
+<mo>&CenterDot;</mo>
+<mi>[NADPH]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>Km5</mi>
+<mo>+</mo>
+<mi>[NADPH]</mi>
+</mrow>
+<mo>+</mo>
+<mfrac>
+<mrow>
+<mi>Km5</mi>
+<mo>&CenterDot;</mo>
+<mi>[NAD{Peroxisome}]</mi>
+</mrow>
+<mi>kiNADpex</mi>
+</mfrac>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[ATP]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Cytosol</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Cytosol</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mrow>
+<mi>Vmax11</mi>
+<mo>&CenterDot;</mo>
+<mi>[NMN{Cytosol}]</mi>
+</mrow>
+<mo>&CenterDot;</mo>
+<mi>[ATP]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mrow>
+<mrow>
+<mi>KmNMN</mi>
+<mo>&CenterDot;</mo>
+<mi>KmATP</mi>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[NMN{Cytosol}]</mi>
+<mo>&CenterDot;</mo>
+<mi>KmATP</mi>
+</mrow>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[ATP]</mi>
+<mo>&CenterDot;</mo>
+<mi>KmNMN</mi>
+</mrow>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[NMN{Cytosol}]</mi>
+<mo>&CenterDot;</mo>
+<mi>[ATP]</mi>
+</mrow>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+ <mtr>
+  <mtd>
+   <mfrac>
+    <mrow>
+     <mo>d</mo>
+     <mfenced>
+      <mrow>
+       <mi>[NMN{Cytosol}]</mi>
+       <mo>&CenterDot;</mo>
+       <msub><mi>V</mi><mi>Cytosol</mi></msub>
+      </mrow>
+     </mfenced>
+    </mrow>
+    <mrow>
+     <mo>d</mo><mi>t</mi>
+    </mrow>
+   </mfrac>
+  </mtd>
+  <mtd>
+   <mo>=</mo>
+  </mtd>
+  <mtd columnalign='left'>
+   <mrow>
+    <mo>-</mo>
+    <msub><mi>V</mi><mi>Cytosol</mi></msub>
+    <mo>&CenterDot;</mo>
+    <mfenced>
+<mfrac>
+<mrow>
+<mrow>
+<mi>Vmax11</mi>
+<mo>&CenterDot;</mo>
+<mi>[NMN{Cytosol}]</mi>
+</mrow>
+<mo>&CenterDot;</mo>
+<mi>[ATP]</mi>
+</mrow>
+<mrow>
+<mrow>
+<mrow>
+<mrow>
+<mi>KmNMN</mi>
+<mo>&CenterDot;</mo>
+<mi>KmATP</mi>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[NMN{Cytosol}]</mi>
+<mo>&CenterDot;</mo>
+<mi>KmATP</mi>
+</mrow>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[ATP]</mi>
+<mo>&CenterDot;</mo>
+<mi>KmNMN</mi>
+</mrow>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mi>[NMN{Cytosol}]</mi>
+<mo>&CenterDot;</mo>
+<mi>[ATP]</mi>
+</mrow>
+</mrow>
+</mfrac>
+    </mfenced>
+   </mrow>
+  </mtd>
+ </mtr>
+</mtable>
+</math>
